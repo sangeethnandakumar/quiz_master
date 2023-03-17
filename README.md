@@ -4,13 +4,31 @@ Quiz Master Project
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```dart
+import 'package:flutter/material.dart';
 
-A few resources to get you started if this is your first Flutter project:
+void main() {
+  runApp(const MaterialApp(
+    home: ToDoApp(),
+  ));
+}
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+class ToDoApp extends StatefulWidget {
+  const ToDoApp({Key? key}) : super(key: key);
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  @override
+  State<ToDoApp> createState() => _ToDoAppState();
+}
+
+class _ToDoAppState extends State<ToDoApp> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: Text('Sangeee'),
+      ),
+    );
+  }
+
+}
+```
